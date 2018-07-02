@@ -56,6 +56,11 @@ module.exports = {
         use: [
           'html-withimg-loader'
         ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/, 
+        loader: "babel-loader"
       }
     ]
   }
